@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D107F77E25E6C4D700157F17 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D107F77D25E6C4D700157F17 /* main.cpp */; };
+		D1C4B8A325F916F300739A96 /* dm2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C4B8A225F916F300739A96 /* dm2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D107F77825E6C4D700157F17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D1C4B89625F8E08100739A96 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,20 @@
 /* Begin PBXFileReference section */
 		D107F77A25E6C4D700157F17 /* DM2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DM2; sourceTree = BUILT_PRODUCTS_DIR; };
 		D107F77D25E6C4D700157F17 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D1C4B89825F8E08100739A96 /* DM2.h */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DM2.h; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C4B8A125F916F000739A96 /* dm2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dm2.h; path = /Users/vera/Documents/code/DM2/DM2/dm2.h; sourceTree = "<absolute>"; };
+		D1C4B8A225F916F300739A96 /* dm2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dm2.cpp; path = /Users/vera/Documents/code/DM2/DM2/dm2.cpp; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D107F77725E6C4D700157F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4B89525F8E08100739A96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				D107F77A25E6C4D700157F17 /* DM2 */,
+				D1C4B89825F8E08100739A96 /* DM2.h */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +78,8 @@
 		D107F77C25E6C4D700157F17 /* DM2 */ = {
 			isa = PBXGroup;
 			children = (
+				D1C4B8A125F916F000739A96 /* dm2.h */,
+				D1C4B8A225F916F300739A96 /* dm2.cpp */,
 				D107F77D25E6C4D700157F17 /* main.cpp */,
 			);
 			path = DM2;
@@ -82,6 +105,23 @@
 			productReference = D107F77A25E6C4D700157F17 /* DM2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		D1C4B89725F8E08100739A96 /* DM2.h */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1C4B89E25F8E08100739A96 /* Build configuration list for PBXNativeTarget "DM2.h" */;
+			buildPhases = (
+				D1C4B89425F8E08100739A96 /* Sources */,
+				D1C4B89525F8E08100739A96 /* Frameworks */,
+				D1C4B89625F8E08100739A96 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DM2.h;
+			productName = DM2.h;
+			productReference = D1C4B89825F8E08100739A96 /* DM2.h */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -91,6 +131,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					D107F77925E6C4D700157F17 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					D1C4B89725F8E08100739A96 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -109,6 +152,7 @@
 			projectRoot = "";
 			targets = (
 				D107F77925E6C4D700157F17 /* DM2 */,
+				D1C4B89725F8E08100739A96 /* DM2.h */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +163,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D107F77E25E6C4D700157F17 /* main.cpp in Sources */,
+				D1C4B8A325F916F300739A96 /* dm2.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C4B89425F8E08100739A96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +304,22 @@
 			};
 			name = Release;
 		};
+		D1C4B89C25F8E08100739A96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1C4B89D25F8E08100739A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -269,6 +337,15 @@
 			buildConfigurations = (
 				D107F78225E6C4D700157F17 /* Debug */,
 				D107F78325E6C4D700157F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1C4B89E25F8E08100739A96 /* Build configuration list for PBXNativeTarget "DM2.h" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1C4B89C25F8E08100739A96 /* Debug */,
+				D1C4B89D25F8E08100739A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
